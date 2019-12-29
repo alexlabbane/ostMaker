@@ -28,3 +28,7 @@ From here, you should be ready to run the .bat! A bunch of intermediate .mp4 fil
 Below is a picture of the file structure for those who are visual.
 
 ![Oops!](https://i.imgur.com/V245vjd.png)
+
+# Known Issues
+
+Right now I know there is an issue where the last song may not get added to the tracklist in the video. The audio is still included, so to get around this when it occurs I usually add an mp3 that is just a couple of seconds of silence to the end of the soundtrack. Yes, this would be pretty easy to fix, but I am also very lazy.
