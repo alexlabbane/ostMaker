@@ -1,5 +1,5 @@
 # ostMaker
-Creates a soundtrack video from a soundtrack and background image. An example is shown in the image below.
+Creates a soundtrack video from a soundtrack and background image. An example is shown in the image below. I made this as a short project because it was a random idea I had after seeing soundtrack videos on YouTube.
 
 ![Oops!](https://i.imgur.com/ErcJHmR.png)
 
