@@ -3,6 +3,8 @@ Creates a soundtrack video from a soundtrack and background image. An example is
 
 ![Oops!](https://i.imgur.com/ErcJHmR.png)
 
+And here is a finished video as well: https://youtu.be/I00BTPRKnCk
+
 # Downloading the JAR
 
 If you would like to make a soundtrack video yourself, you can download the compiled .jar (and a .bat file to run the .jar) file here: https://drive.google.com/open?id=1pJYWzQ6JbXxLwIj61gF5SiH6nJ7TKy-h
