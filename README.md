@@ -6,7 +6,7 @@ Creates a soundtrack video from a soundtrack and background image. An example is
 
 ![Oops!](https://i.imgur.com/ErcJHmR.png)
 
-And here is a finished video as well: https://youtu.be/I00BTPRKnCk
+And here are a couple of finished videos as well: https://youtu.be/I00BTPRKnCk https://youtu.be/k-f2SuMadPg
 
 # Downloading the JAR
 
