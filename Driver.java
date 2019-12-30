@@ -28,6 +28,9 @@ public class Driver {
 		String backgroundPath = "background.png";
 		String logoPath = "logo.png";
 		
+		//Print Description (generates timestamp description if you want YouTube upload)
+		printDescription(audioTracks);
+		
 		//Generate all frames of video
 		generateImages(numTracks, audioTracks, backgroundPath, logoPath);
 		
@@ -38,6 +41,47 @@ public class Driver {
 		concatenateVideos(audioTracks, currentPath);
 		
 		System.out.println("Process complete! Terminating...");
+	}
+	
+	static void printDescription(File[] audioTracks) throws UnsupportedAudioFileException, IOException {
+		System.out.println("Printing Description");
+		int secondsSum = 0;
+		for(int i = 0; i < audioTracks.length; i++) {
+			File file = new File(audioTracks[i].getAbsolutePath());
+			AudioFileFormat baseFileFormat = new MpegAudioFileReader().getAudioFileFormat(file);
+			Map properties = baseFileFormat.properties();
+			Long duration = (Long) properties.get("duration");
+			Long timeSeconds = 2 + duration/1000/1000;
+			
+			String formattedTime = "";
+			
+			if(secondsSum > 0) secondsSum -= 1;
+			//Add hours
+			String formattedHours = "";
+			int hours = secondsSum / 60 / 60;
+			if(hours >= 10) formattedHours += hours;
+			else formattedHours += "0" + hours;
+			
+			//Add minutes
+			String formattedMinutes = "";
+			int minutes = secondsSum / 60 % 60;
+			if(minutes >= 10) formattedMinutes += minutes;
+			else formattedMinutes += "0" + minutes;
+			
+			//Add seconds
+			String formattedSeconds = "";
+			int seconds = secondsSum % 60;
+			if(seconds >= 10) formattedSeconds += seconds;
+			else formattedSeconds += "0" + seconds;
+			
+			//Concatenate them all
+			formattedTime = formattedHours + ":" + formattedMinutes + ":" + formattedSeconds;
+			
+			System.out.println(audioTracks[i].getName().substring(0, audioTracks[i].getName().length() - 4) + " - " + formattedTime);
+			if(secondsSum > 0) secondsSum += 1;
+			secondsSum += timeSeconds; //Add time of current track AFTER current tracks starting time is printed
+		}
+		System.out.println("End of Description\n");
 	}
 	
 	static void generateImages(int numTracks, File[] audioTracks, String backgroundPath, String logoPath) throws IOException {
