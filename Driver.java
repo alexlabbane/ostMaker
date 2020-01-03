@@ -94,6 +94,9 @@ public class Driver {
 			BufferedImage logo = ImageIO.read(new File(logoPath));
 			
 			Graphics2D baseImage = img.createGraphics();
+			baseImage.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+			
 			baseImage.drawImage(logo, 1920/2 - 400, 40, null);
 			baseImage.setFont(new Font("Times New Roman", 2, 28));
 			
