@@ -1,14 +1,14 @@
-# ostMaker
+# Soundtrack Creator
 
-Note: Requires ffmpeg to be installed!
-
-Creates a soundtrack video from a soundtrack and background image. An example is shown in the image below. I made this as a short project because it was a random idea I had after seeing soundtrack videos on YouTube.
+This project creates a soundtrack video from a soundtrack and background image. An example is shown in the image below. I made this as a short project for myself so that I could build out my own timestamped soundtrack videos on YouTube to listen to while I study. Here is an example picture from a video that has been produced:
 
 ![Oops!](https://i.imgur.com/ErcJHmR.png)
 
 And here are a couple of finished videos as well: https://youtu.be/I00BTPRKnCk https://youtu.be/k-f2SuMadPg
 
 # Downloading the JAR
+
+Note: Requires ffmpeg to be installed!
 
 If you would like to make a soundtrack video yourself, you can download the compiled .jar (and a .bat file to run the .jar) file here: https://drive.google.com/open?id=1pJYWzQ6JbXxLwIj61gF5SiH6nJ7TKy-h
 
